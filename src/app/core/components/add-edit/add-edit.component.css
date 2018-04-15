@@ -1,0 +1,46 @@
+.add-edit-wrapper {
+    position: absolute;
+    z-index: 15;
+    display: table;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    background: #fff;
+    padding: 0px 40px;
+    border-left: 1px solid #e0e0e0;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+form {
+    margin-top: 80px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+select {
+    margin-bottom: 20px;
+}
+select:focus {
+    box-shadow: none;
+}
+
+input:focus {
+    box-shadow: none;
+}
+
+.btn-submit {
+    background-color: rgb(255, 131, 8);
+    color: #fff;
+}

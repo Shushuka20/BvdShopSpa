@@ -1,0 +1,34 @@
+<div class="view-add-edit">
+    <router-outlet></router-outlet>
+</div>
+<div class="sub-header">
+    <h4 class="page-title">Список Пользователей</h4>
+</div>
+<div class="row no-gutters">
+    <div class="col-md-3">
+        <div class="aside-wrapper">
+            <app-data-search (search)="onSearch($event)" ></app-data-search>
+            <div class="categories-wrapper">
+                <div class="categories-header">
+                    <span>Выбрать категорию</span>
+                </div>
+                <ul class="categories-menu">
+                    <li (click)="onFilterByCategory('Менеджер')">Менеджер</li>
+                    <li (click)="onFilterByCategory('Работник')">Работник</li>
+                    <li (click)="onFilterByCategory('Все')">Все</li>
+                </ul>              
+            </div>            
+        </div>       
+    </div>
+    <div class="col-md-9">
+        <div class="table-wrapper">
+            <a class="add-button" routerLink="add">Новый пользователь</a>      
+            <app-data-table [dataSource]="users" (sortKey)="onSort($event)"></app-data-table>
+        </div>
+    </div>
+    
+</div>
+
+
+
+

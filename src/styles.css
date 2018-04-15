@@ -1,0 +1,88 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+body {
+    background-color: #f2f3f6;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-header {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ff7a05, #ffa305);
+    z-index: 1;
+    display: table;
+    padding: 0 20px;
+}
+
+.table-wrapper {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    -moz-box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    min-height: 620px;
+    margin-right: 40px;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+    width: 97%;
+    padding: 20px 40px;
+}
+
+.aside-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px 27px;
+}
+
+.categories-wrapper {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    -moz-box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    margin-top: 40px;
+    height: 437px;
+}
+
+.categories-header {
+    height: 60px;
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.categories-header span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+}
+
+.categories-menu {
+    list-style: none;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.categories-menu li {
+    padding: 10px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    transition: .3s;
+}
+
+.categories-menu li:hover {
+    border-color: #ffa305;
+}

@@ -1,0 +1,19 @@
+<div class="add-edit-wrapper">
+    <form action="" [formGroup]="addEditReactiveForm" (submit)="onSubmit()">
+        <h3 class="title">Добавить пользователя</h3>
+        <label for="">Имя</label>
+        <input class="form-control" formControlName="name" type="text">
+        <label for="">Пароль</label>
+        <input class="form-control" formControlName="password" type="password">
+        <label for="">Роль</label>
+        <select class="form-control" formControlName="role" type="text">
+            <option [selected]="true" disabled value="">Выберете роль</option>
+            <option value="Менеджер">Менеджер</option>
+            <option value="Работник">Работник</option>
+        </select>
+        <button class="btn btn-submit">Сохранить</button>
+        <a class="btn btn-dark" routerLink="/admin/users">Закрыть</a>  
+    </form>
+      
+</div>
+
